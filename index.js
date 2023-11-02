@@ -54,7 +54,10 @@ inq
     }
 ])
 
-.then((data) => {console.log(data)})
+.then((data) => {
+    console.log(data)
+fs.promises.writeFile("answers.json", JSON.stringify(data))
+})
 
 // // TODO: Create a function to write README file
 // function writeToFile(fileName, data) {}
