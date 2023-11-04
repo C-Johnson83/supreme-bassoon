@@ -78,7 +78,7 @@ ${data.description}
 - [License](#license)
 
 ## Installation
-What are the steps required to install your project? 
+What are the steps required to install your project?  
 ${data.installation}
 
 ## Usage

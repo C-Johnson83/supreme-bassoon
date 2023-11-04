@@ -84,7 +84,7 @@ function init() {
     .then((data) => {
         console.log(data)
         const readMe = generateMarkdown(data)
-        writeToFile('ReadMe.md', readMe)
+        writeToFile('./utils/sampleReadMe.md', readMe)
 })
 }
 
