@@ -66,8 +66,16 @@ const generateMarkdown = require('./utils/generateMarkdown');
     ]
   
 
-// // TODO: Create a function to write README file
-// function writeToFile(fileName, data) {}
+// TODO: Create a function to write README file
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, (err) => {
+      if (err) {
+        console.error('Error writing', fileName, ':', err);
+      } else {
+        console.log(fileName, 'has been successfully created.');
+      }
+    });
+  }
 
 // TODO: Create a function to initialize app
 function init() {
@@ -76,7 +84,8 @@ function init() {
     .then((data) => {
         console.log(data)
         const readMe = generateMarkdown(data)
-        console.log(readMe)
+        writeToFile('ReadMe.md', readMe)
+
 })
 }
 // Function call to initialize app
