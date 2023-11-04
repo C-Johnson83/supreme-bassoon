@@ -1,8 +1,8 @@
-# hello
+# fart
 
 ## Description
 
-hello again
+farty
 
 ## Table of Contents (Optional)
 
@@ -13,28 +13,28 @@ hello again
 
 ## Installation
 What are the steps required to install your project? 
-still there?
+fart
 
 ## Usage
 
-bye
+fart
 
 ## License
-This project is licensed under the Apache 2.0 license.  
+This project is licensed under the MIT license.  
 License Link  
-   
-  
+https://opensource.org/licenses/MIT   
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]  
 
 ## Credits
 
-bye bye  
+fart  
 
 ## Testing
 
-byebye bye  
+fartyfart  
 
 ## Questions
 
-uvuaagag  
-aergagaaharthwbtjrujrjthwth
+kycky  
+udrlua
 

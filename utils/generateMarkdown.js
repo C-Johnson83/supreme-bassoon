@@ -1,7 +1,7 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  if (license === 'Apache License 2.0') {
+  if (license === 'Apache 2.0') {
     return '[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]';
   } else if (license === 'GNU General Public v3.0') {
     return '[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]';
@@ -36,7 +36,7 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   const links = {
-    'Apache License 2.0': 'https://www.gnu.org/licenses/gpl-3.0',
+    'Apache 2.0': 'https://www.gnu.org/licenses/gpl-3.0',
     'GNU General Public v3.0': 'https://www.gnu.org/licenses/gpl-3.0',
     'MIT': 'https://opensource.org/licenses/MIT',
     'BSD 2-Clause': 'https://opensource.org/licenses/BSD-2-Clause',
