@@ -49,10 +49,6 @@ function renderLicenseLink(license) {
     'GNU Lesser General Public v3.0': 'https://www.gnu.org/licenses/lgpl-3.0',
     'Mozilla Public 2.0': 'https://opensource.org/licenses/MPL-2.0',
     'The Unlicense': 'http://unlicense.org/'
-
-
-
-
   };
   return links[license] || '';
 }
@@ -69,8 +65,6 @@ function renderLicenseSection(license) {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
-
-
 
 ## Description
 
@@ -96,7 +90,6 @@ ${renderLicenseSection(data.license)}
 License Link  
 ${renderLicenseLink(data.license)}   
 ${renderLicenseBadge(data.license)}  
-
 
 ## Credits
 
