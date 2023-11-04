@@ -1,11 +1,9 @@
 // TODO: Include packages needed for this application
 const inq = require('inquirer');
 const fs = require('fs');
-
+const generateMarkdown = require('./utils/generateMarkdown');
 // TODO: Create an array of questions for user input
-// const questions =
-inq
-    .prompt([
+ const questions =    [
         {
             type: 'input',
             message: 'Please enter the title of your readme',
@@ -37,7 +35,7 @@ inq
             name: 'test'
         },
         {
-            type: 'checkbox',
+            type: 'list',
             message: 'Please select a license',
             choices: [
                 'Apache License 2.0',
@@ -65,27 +63,21 @@ inq
             message: 'Please enter your email address',
             name: 'email'
         }
-    ])
-    .then((data) => {
-        console.log(data)
-        fs.promises.writeFile("answers.json", JSON.stringify(data))
-    })
+    ]
+  
 
 // // TODO: Create a function to write README file
 // function writeToFile(fileName, data) {}
 
-// // TODO: Create a function to initialize app
-// function init() {}
-
-// // Function call to initialize app
-// init();
-
-
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) { }
-
 // TODO: Create a function to initialize app
-function init() { }
-
+function init() {
+    inq
+    .prompt(questions)
+    .then((data) => {
+        console.log(data)
+        const readMe = generateMarkdown(data)
+        console.log(readMe)
+})
+}
 // Function call to initialize app
 init();
