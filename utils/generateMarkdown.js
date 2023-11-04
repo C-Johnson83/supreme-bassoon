@@ -101,8 +101,9 @@ ${data.test}
 
 ## Questions
 
-${data.username}  
-${data.email}
+For any questions please feel free to contact me at
+<a href="https://github.com/${data.username}" target="_blank">Github</a>  
+or by email ${data.email}
 
 `;
 }
