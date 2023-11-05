@@ -64,6 +64,6 @@ WHEN I click on the links in the Table of Contents
 THEN I am taken to the corresponding section of the README
 
 ## SampleVideo
+https://watch.screencastify.com/v/GRgsKu4mZF7kFMGCn2SG
 
-<video src="utils/Example%20video.mp4" controls title="Title"></video>
 
