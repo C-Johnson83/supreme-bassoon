@@ -65,4 +65,5 @@ THEN I am taken to the corresponding section of the README
 
 ## SampleVideo
 
+<video src="utils/Example%20video.mp4" controls title="Title"></video>
 
